@@ -707,7 +707,7 @@ utest_type_printer(long long unsigned int i) {
 #endif
 
 #else
-#define UTEST_AUTO(x) typeof(x + 0)
+#define UTEST_AUTO(x) typeof(x + x)
 #endif
 
 #if defined(__clang__)
